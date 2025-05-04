@@ -116,53 +116,53 @@ export default function TabOptions(): React.ReactNode {
               <ItemList icon={<IconOption />} text="Options" />
             </ul>
           </ModalSmall>
-          <ModalSmall
-            openModal={modalFilter}
-            setOpenModal={setModalFilter}
-            position={{ x: 480, y: 150 }}
-          >
-            Filter
-          </ModalSmall>
-          <ModalSmall
-            openModal={modalShow}
-            setOpenModal={setModalShow}
-            position={{ x: 370, y: 150 }}
-          >
-            <ul className="flex flex-col gap-2">
-              <ItemList icon={<></>} text="Very big icons" />
-              <ItemList icon={<></>} text="Big icons" />
-              <ItemList icon={<></>} text="Medium icons" />
-              <ItemList icon={<></>} text="Small icons" />
-              <ItemList icon={<></>} text="List" />
-              <ItemList icon={<></>} text="Details" />
-              <ItemList icon={<></>} text="Icons" />
-              <ItemList icon={<></>} text="Content" />
-              <ItemList icon={<></>} text="Show" />
-            </ul>
-          </ModalSmall>
-          <ModalSmall
-            openModal={modalSort}
-            setOpenModal={setModalSort}
-            position={{ x: 260, y: 150 }}
-          >
-            <ul className="flex flex-col gap-2">
-              <ItemList icon={<></>} text="Name" />
-              <ItemList icon={<></>} text="State" />
-              <ItemList icon={<></>} text="NModify date" />
-              <ItemList icon={<></>} text="More" />
-            </ul>
-          </ModalSmall>
-          <ModalSmall
-            openModal={modalNew}
-            setOpenModal={setModalNew}
-            position={{ x: 20, y: 150 }}
-          >
-            <ul className="flex flex-col gap-2">
-              <ItemList icon={<></>} text="Folder" />
-              <ItemList icon={<></>} text="Direct access" />
-            </ul>
-          </ModalSmall>
         </div>
+        <ModalSmall
+          openModal={modalFilter}
+          setOpenModal={setModalFilter}
+          position={{ x: 480, y: 150 }}
+        >
+          Filter
+        </ModalSmall>
+        <ModalSmall
+          openModal={modalShow}
+          setOpenModal={setModalShow}
+          position={{ x: 370, y: 150 }}
+        >
+          <ul className="flex flex-col gap-2">
+            <ItemList icon={<></>} text="Very big icons" />
+            <ItemList icon={<></>} text="Big icons" />
+            <ItemList icon={<></>} text="Medium icons" />
+            <ItemList icon={<></>} text="Small icons" />
+            <ItemList icon={<></>} text="List" />
+            <ItemList icon={<></>} text="Details" />
+            <ItemList icon={<></>} text="Icons" />
+            <ItemList icon={<></>} text="Content" />
+            <ItemList icon={<></>} text="Show" />
+          </ul>
+        </ModalSmall>
+        <ModalSmall
+          openModal={modalSort}
+          setOpenModal={setModalSort}
+          position={{ x: 260, y: 150 }}
+        >
+          <ul className="flex flex-col gap-2">
+            <ItemList icon={<></>} text="Name" />
+            <ItemList icon={<></>} text="State" />
+            <ItemList icon={<></>} text="NModify date" />
+            <ItemList icon={<></>} text="More" />
+          </ul>
+        </ModalSmall>
+        <ModalSmall
+          openModal={modalNew}
+          setOpenModal={setModalNew}
+          position={{ x: 20, y: 150 }}
+        >
+          <ul className="flex flex-col gap-2">
+            <ItemList icon={<></>} text="Folder" />
+            <ItemList icon={<></>} text="Direct access" />
+          </ul>
+        </ModalSmall>
       </div>
       <div>
         <ContentIconV2 icon={<IconDetail />} text="Details" />

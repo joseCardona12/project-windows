@@ -1,17 +1,19 @@
 import { ReactElement } from "react";
-import { IconPin } from "../../../public/icons";
+import { IconArrowRightV2, IconPin } from "../../../public/icons";
 
 interface IItemListProps {
   text: string;
   icon: ReactElement;
   click?: () => void;
   isPin?: boolean;
+  isArrow?: boolean;
 }
 export default function ItemList({
   text,
   icon,
   click,
   isPin,
+  isArrow,
 }: IItemListProps): React.ReactNode {
   return (
     <li
@@ -25,6 +27,11 @@ export default function ItemList({
       {isPin && (
         <span>
           <IconPin />
+        </span>
+      )}
+      {isArrow && (
+        <span>
+          <IconArrowRightV2 />
         </span>
       )}
     </li>

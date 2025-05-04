@@ -14,7 +14,7 @@ import { TbCloudExclamation as IconCloud } from "react-icons/tb";
 import { FaWifi as IconWifi } from "react-icons/fa6";
 import { HiBattery100 as IconBatteryFull } from "react-icons/hi2";
 import { HiOutlineSpeakerWave as IconSpeaker } from "react-icons/hi2";
-import { PiWindowsLogoFill as IconWindow } from "react-icons/pi";
+import { BsMicrosoft as IconWindow } from "react-icons/bs";
 import { FaWindowRestore as IconWindowRestore } from "react-icons/fa6";
 import { FaFolder as IconFolder } from "react-icons/fa";
 import { LuArrowDownUp as IconArrowSort } from "react-icons/lu";
@@ -38,8 +38,56 @@ import { LuUndo2 as IconUndo } from "react-icons/lu";
 import { LuRedo2 as IconRedo } from "react-icons/lu";
 import { CgOptions as IconOption } from "react-icons/cg";
 import { PiNutFill as IconConfig } from "react-icons/pi";
+import { IoPower as IconPower } from "react-icons/io5";
+import { FaUser as IconUser } from "react-icons/fa";
+import { FaEdge as IconEdge } from "react-icons/fa6";
+import { IoBag as IconBag } from "react-icons/io5";
+import { FaClock as IconClock } from "react-icons/fa";
+import { PiNotepadFill as IconNotePad } from "react-icons/pi";
+import { GrPersonalComputer as IconSystem } from "react-icons/gr";
+import { IoBluetooth as IconBluetooth } from "react-icons/io5";
+import { FaWifi as IconWifiV2 } from "react-icons/fa6";
+import { RiPencilFill as IconPencil } from "react-icons/ri";
+import { RiAppsFill as IconApp } from "react-icons/ri";
+import { GrLanguage as IconLanguage } from "react-icons/gr";
+import { HiHome as IconHomeV2 } from "react-icons/hi";
+import { ImList2 as IconList } from "react-icons/im";
+import { FaFileWord as IconWord } from "react-icons/fa6";
+import { FaFileExcel as IconExcel } from "react-icons/fa6";
+import { FaFilePowerpoint as IconPowerPoint } from "react-icons/fa6";
+import { FaCloud as IconCloudV2 } from "react-icons/fa";
+import { FaCheck as IconCheck } from "react-icons/fa";
+import { MdOutlineError as IconError } from "react-icons/md";
+import { IoHelpOutline as IconHelp } from "react-icons/io5";
+import { IoTerminal as IconTerminal } from "react-icons/io5";
+import { FaSave as IconSave } from "react-icons/fa";
+import { FaFile as IconFile } from "react-icons/fa6";
 
 export {
+  IconFile,
+  IconSave,
+  IconTerminal,
+  IconHelp,
+  IconError,
+  IconCheck,
+  IconCloudV2,
+  IconExcel,
+  IconPowerPoint,
+  IconWord,
+  IconList,
+  IconHomeV2,
+  IconApp,
+  IconBluetooth,
+  IconLanguage,
+  IconPencil,
+  IconWifiV2,
+  IconSystem,
+  IconNotePad,
+  IconClock,
+  IconBag,
+  IconEdge,
+  IconUser,
+  IconPower,
   IconConfig,
   IconOption,
   IconRedo,
