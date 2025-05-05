@@ -18,7 +18,7 @@ import Icon from "../atoms/Icon";
 import InputSearchV2 from "./InputSearchV2";
 import { useView } from "@/app/core/application/state-global/view";
 import { useSection } from "@/app/core/application/state-global/section";
-import DesktopSection from "../organisms/DesktopSection";
+import DesktopSection from "../organisms/files/DesktopSection";
 import ContentIconsWindow from "./ContentIconsWindow";
 import ContentInitialWindowTabAll from "./ContentInitialWidowTabAll";
 import ContentInitialWindowTabRecomme from "./ContentIntialWindowTabRecomme";

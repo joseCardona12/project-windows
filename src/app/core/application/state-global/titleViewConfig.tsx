@@ -1,4 +1,4 @@
-import HomeSectionConfiguration from "@/ui/organisms/HomeSectionConfiguration";
+import HomeSectionConfiguration from "@/ui/organisms/Configuration/HomeSectionConfiguration";
 import { create } from "zustand";
 
 interface ITitleViewConfig {

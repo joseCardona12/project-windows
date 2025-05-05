@@ -5,4 +5,13 @@ export const DATA_COMMAND: string[] = [
   "clear",
   "list",
   "LIST",
+  "open desktop",
+  "open cloud",
+  "open galery",
+  "open home",
+  "open download",
+  "open doc",
+  "open images",
+  "open music",
+  "open videos",
 ];

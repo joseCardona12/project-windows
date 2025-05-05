@@ -62,8 +62,28 @@ import { IoHelpOutline as IconHelp } from "react-icons/io5";
 import { IoTerminal as IconTerminal } from "react-icons/io5";
 import { FaSave as IconSave } from "react-icons/fa";
 import { FaFile as IconFile } from "react-icons/fa6";
+import { FaGoogle as IconGoogle } from "react-icons/fa";
+import { HiOutlineDotsVertical as IconDoctThreeV2 } from "react-icons/hi";
+import { FaCircleCheck as IconCheckV2 } from "react-icons/fa6";
+import { RiApps2Fill as IconAppFill } from "react-icons/ri";
+import { FaGoogleDrive as IconDrive } from "react-icons/fa";
+import { BiLogoGmail as IconGmail } from "react-icons/bi";
+import { FaYoutube as IconYoutube } from "react-icons/fa";
+import { FaMapMarkerAlt as IconMap } from "react-icons/fa";
+import { IoCalendarClear as IconCalendar } from "react-icons/io5";
+import { FaStop as IconStop } from "react-icons/fa6";
 
 export {
+  IconStop,
+  IconCalendar,
+  IconDrive,
+  IconGmail,
+  IconYoutube,
+  IconMap,
+  IconAppFill,
+  IconCheckV2,
+  IconDoctThreeV2,
+  IconGoogle,
   IconFile,
   IconSave,
   IconTerminal,

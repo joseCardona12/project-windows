@@ -1,6 +1,6 @@
 import { useMessage } from "@/app/core/application/state-global/messge";
 import { AnimatePresence, motion } from "framer-motion";
-import { IconCheck, IconClose, IconError } from "../../../public/icons";
+import { IconCheckV2, IconClose, IconError } from "../../../public/icons";
 import { useEffect } from "react";
 
 export default function Message(): React.ReactNode {
@@ -36,15 +36,15 @@ export default function Message(): React.ReactNode {
           >
             <div className="flex flex-col justify-center h-full gap-2 relative">
               <div className="flex items-center gap-2 p-4">
+                {message.variant === "success" ? (
+                  <IconCheckV2 className="" />
+                ) : (
+                  <IconError className="text-[var(--color-red)]" />
+                )}
                 <div className="flex flex-col">
                   {message.title && <h5>{message.title}</h5>}
                   {message.description && <p>{message.description}</p>}
                 </div>
-                {message.variant === "success" ? (
-                  <IconCheck className="" />
-                ) : (
-                  <IconError className="text-[var(--color-red)]" />
-                )}
               </div>
               <span
                 className="absolute top-1 right-1 cursor-pointer"

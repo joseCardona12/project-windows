@@ -1,11 +1,6 @@
-import { ReactElement } from "react";
+import { ISection } from "@/interfaces/section";
 import { create } from "zustand";
 
-interface ISection {
-  name: string;
-  section: React.ReactNode;
-  icon?: ReactElement;
-}
 interface ISectionState {
   stateSection: ISection;
   setStateSection: (value: ISection) => void;

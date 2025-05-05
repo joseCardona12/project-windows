@@ -1,7 +1,24 @@
+import { ISection } from "@/interfaces/section";
+import { IView } from "@/interfaces/view";
 import { DATA_COMMAND } from "@/utils/constants/command";
 import { useEffect, useRef, useState } from "react";
+import { IconCloud, IconDesktop } from "../../public/icons";
+import DesktopSection from "@/ui/organisms/files/DesktopSection";
+import CloudSection from "@/ui/organisms/files/cloud/CloudSection";
+import { DATA_COMMAND_KEY } from "@/utils/constants/dataCommands";
 
-export default function UseTerminal() {
+interface IUseTerminalProps {
+  setOpenModalWindow: (value: boolean) => void;
+  openModalWindow: boolean;
+  setStateView: (value: IView) => void;
+  setStateSection: (value: ISection) => void;
+}
+export default function UseTerminal({
+  setOpenModalWindow,
+  openModalWindow,
+  setStateSection,
+  setStateView,
+}: IUseTerminalProps) {
   const [commandLines, setCommandLines] = useState<string[]>([""]);
   const [focusIndex, setFocusIndex] = useState<number>(0);
   const inputRefs = useRef<HTMLInputElement[]>([]);
@@ -48,6 +65,33 @@ export default function UseTerminal() {
         handleClear();
         return;
       }
+
+      if (value === "open desktop") {
+        setOpenModalWindow(!openModalWindow);
+        setStateSection({
+          name: "Desktop",
+          section: <DesktopSection />,
+        });
+        setStateView({
+          view: "Desktop",
+          icon: <IconDesktop />,
+        });
+      }
+
+      DATA_COMMAND_KEY.forEach((item) => {
+        // Verify command view desktop and subview...
+        if (item.command === value) {
+          setOpenModalWindow(true);
+          setStateSection({
+            name: item.name,
+            section: item.section,
+          });
+          setStateView({
+            view: item.name,
+            icon: item.icon,
+          });
+        }
+      });
 
       if (value !== "") {
         setCommandLines([...commandLines, ""]);

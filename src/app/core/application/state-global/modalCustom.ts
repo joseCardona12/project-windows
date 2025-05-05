@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-interface IModalCustom {
+export interface IModalCustom {
   nameIcon: string;
   state: boolean;
   section?: React.ReactNode;

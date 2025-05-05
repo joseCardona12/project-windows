@@ -7,7 +7,7 @@ import {
   IconNotePad,
   IconPhoto,
 } from "../../../public/icons";
-import NotePadSection from "@/ui/organisms/NotepadSection";
+import NotePadSection from "@/ui/organisms/window/NotepadSection";
 
 export const DATA_TAB_WINDOW_HOME: ITabWindowHome[] = [
   {

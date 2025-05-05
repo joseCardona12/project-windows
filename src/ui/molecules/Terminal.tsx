@@ -1,6 +1,14 @@
+import { useOpenModalCustom } from "@/app/core/application/state-global/modalCustom";
+import { useOpenModalWindow } from "@/app/core/application/state-global/modalWindow";
+import { useSection } from "@/app/core/application/state-global/section";
+import { useView } from "@/app/core/application/state-global/view";
 import UseTerminal from "@/hooks/useTerminal";
 
 export default function Terminal(): React.ReactNode {
+
+  const {setOpenModalWindow, openModalWindow} = useOpenModalWindow((state)=>state);
+  const {setStateView} = useView((state)=>state);
+  const {setStateSection} = useSection((state)=>state);
   const {
     commandLines,
     inputRefs,
@@ -10,7 +18,7 @@ export default function Terminal(): React.ReactNode {
     handleFocus,
     errors,
     outputs,
-  } = UseTerminal();
+  } = UseTerminal({setOpenModalWindow, openModalWindow, setStateSection, setStateView});
   return (
     <div className="flex flex-col gap-2 h-full overflow-y-scroll scroll-custom p-2">
       {commandLines.map((command, index) => (
@@ -38,7 +46,7 @@ export default function Terminal(): React.ReactNode {
             </div>
           )}
           {outputs[index] && !errors[index] && (
-            <div className="text-green-400 text-sm whitespace-pre-wrap">
+            <div className="text-[var(--color-green)] text-sm whitespace-pre-wrap">
               {outputs[index]}
             </div>
           )}

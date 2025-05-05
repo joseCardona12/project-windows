@@ -1,10 +1,6 @@
-import { ReactElement } from "react";
+import { IView } from "@/interfaces/view";
 import { create } from "zustand";
 
-interface IView {
-  view: string;
-  icon: ReactElement;
-}
 interface IViewState {
   stateView: IView;
   setStateView: (value: IView) => void;

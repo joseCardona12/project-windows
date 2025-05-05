@@ -2,7 +2,7 @@
 import { useSection } from "@/app/core/application/state-global/section";
 import { IconDesktop } from "../../../public/icons";
 import ItemList from "../molecules/ItemList";
-import DesktopSection from "./DesktopSection";
+import DesktopSection from "./files/DesktopSection";
 import {
   DATA_TAB_MENU,
   DATA_TAB_MENU_DEFAULT,

@@ -17,17 +17,17 @@ import {
   IconUser,
   IconWifiV2,
 } from "../../../public/icons";
-import DesktopSection from "@/ui/organisms/DesktopSection";
-import DownloadSection from "@/ui/organisms/DownloadSection";
-import DocSection from "@/ui/organisms/DocSection";
-import ImagesSection from "@/ui/organisms/ImagesSection";
-import MusicSection from "@/ui/organisms/MusicSection";
-import VideosSection from "@/ui/organisms/VideosSection";
-import HomeSection from "@/ui/organisms/HomeSection";
-import GalerySection from "@/ui/organisms/GalerySection";
-import CloudSection from "@/ui/organisms/CloudSection";
-import HomeSectionConfiguration from "@/ui/organisms/HomeSectionConfiguration";
-import SystemSectionConfiguration from "@/ui/organisms/SystemSectionConfiguration";
+import DesktopSection from "@/ui/organisms/files/DesktopSection";
+import DownloadSection from "@/ui/organisms/files/DownloadSection";
+import DocSection from "@/ui/organisms/files/DocSection";
+import ImagesSection from "@/ui/organisms/files/ImagesSection";
+import MusicSection from "@/ui/organisms/files/MusicSection";
+import VideosSection from "@/ui/organisms/files/VideosSection";
+import HomeSection from "@/ui/organisms/files/HomeSection";
+import GalerySection from "@/ui/organisms/files/GalerySection";
+import CloudSection from "@/ui/organisms/files/cloud/CloudSection";
+import HomeSectionConfiguration from "@/ui/organisms/Configuration/HomeSectionConfiguration";
+import SystemSectionConfiguration from "@/ui/organisms/Configuration/SystemSectionConfiguration";
 
 export const DATA_TAB_MENU: ITabMenuData[] = [
   {

@@ -1,6 +1,6 @@
 "use client";
 import ContentIcon from "../atoms/CotentIcon";
-import { IconFile, IconTrash } from "../../../public/icons";
+import { IconFile, IconGoogle, IconTrash } from "../../../public/icons";
 import Modal from "../organisms/Modal";
 import Footer from "../organisms/Footer";
 import ModalSmall from "../molecules/ModalSmall";
@@ -19,6 +19,8 @@ import Icon from "../atoms/Icon";
 import { useFileState } from "@/app/core/application/state-global/files";
 import { IFile } from "@/interfaces/files";
 import HeaderModalConfig from "../molecules/HeaderModalConfig";
+import { useOpenModalWindow } from "@/app/core/application/state-global/modalWindow";
+import GoogleSection from "../organisms/GoogleSection/GoogleSection";
 
 export default function Desktop(): React.ReactNode {
   const [positionModalClickRight, setPositionModalClickRight] = useState<{
@@ -34,6 +36,9 @@ export default function Desktop(): React.ReactNode {
   const { desktopBackground } = useDesktopBackground((state) => state);
   const { setModalSmall, modalSmall } = useModalSmall((state) => state);
   const { fileState } = useFileState((state) => state);
+  const { setOpenModalWindow, openModalWindow } = useOpenModalWindow(
+    (state) => state
+  );
   const [fileActive, setFileActive] = useState<IFile>({
     content: "",
     key: "",
@@ -83,7 +88,24 @@ export default function Desktop(): React.ReactNode {
             });
           }}
         >
-          <ContentIcon text="Trash" icon={<IconTrash />} />
+          <ContentIcon
+            text="Trash"
+            icon={<IconTrash />}
+            click={() => {
+              setOpenModalWindow(!openModalWindow);
+            }}
+          />
+          <ContentIcon
+            text="Google"
+            icon={<IconGoogle />}
+            click={() => {
+              setOpenModalCustom({
+                nameIcon: "",
+                state: !openModalCustom.state,
+                section: <GoogleSection />,
+              });
+            }}
+          />
           {fileState.map((file: IFile, index: number) => (
             <Icon
               icon={
